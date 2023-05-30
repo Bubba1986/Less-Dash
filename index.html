@@ -3,23 +3,25 @@
 
 <head>
   <title>Remove Dash</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
-  <form>
-    <label>Enter Text:</label>
+<body class="dark-mode">
+  <div class="container">
+    <form>
+      <label>Enter Text:</label>
+      <br>
+      <textarea id="text-input" class="form-control" style="height: 200px; width: 80%;"></textarea>
+      <br>
+      <div class="button-container">
+        <button type="button" onclick="removeDash()">Generate</button>
+        <button onclick="copyOutput()">Copy</button>
+      </div>
+    </form>
     <br>
-    <textarea id="text-input" class="form-control form-control-lg" style="height: 200px; width: 1000px;"></textarea>
-    <br>
-    <button type="button" onclick="removeDash()">Generate</button>
-  </form>
-  <br>
-  <p id="output"></p>
+    <p id="output"></p>
+  </div>
   <script type="text/javascript" src="script.js"></script>
-  <br>
-  <button onclick="copyOutput()">Copy</button>
-
 </body>
 
 </html>
