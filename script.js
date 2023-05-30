@@ -1,6 +1,6 @@
 function removeDash() {
   var input = document.getElementById("text-input").value;
-  var output = input.replace(/-/g, " ");
+  var output = input.replace(/[-_./\\]/g, " ");
   document.getElementById("output").innerHTML = output;
 }
 
